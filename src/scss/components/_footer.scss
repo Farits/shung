@@ -1,0 +1,28 @@
+.footer{
+	background-color: var(--color-black);
+	padding: 40px 0;
+	a{
+		--font-family: GilroyMedium;
+		font: 500 14px / 140% var(--font-family);
+		color: var(--color-white);
+		transition:var(--transition);
+		position: relative;
+		text-decoration: none;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			display: block;
+			width: 0;
+			height: 1px;
+			transform: translate(-50%);
+			background: transparent;
+			transition:var(--transition);
+		}
+		&:hover:before{
+			width: 100%;
+			background: var(--color-white);
+		}
+	}
+}
